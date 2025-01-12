@@ -1,0 +1,50 @@
+.content {
+  justify-self: center;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* body {
+  margin: ;
+  outline: auto;
+  outline-style: solid;
+  outline-color: gray;
+} */
+
+h1,
+h2 {
+  justify-self: center;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 2.5em;
+}
+
+h2 {
+  color: #006eb6;
+  font-size: 1em;
+  letter-spacing: 0.25em;
+}
+
+p,
+li {
+  font-weight: bold;
+  justify-self: auto;
+  font-size: 20px;
+  margin: 1em;
+}
+
+/* ol {
+  font-style: italic;
+} */
+
+footer {
+  justify-self: center;
+}
+
+img {
+  width: 9em;
+}
