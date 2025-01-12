@@ -2,6 +2,7 @@
   justify-self: center;
   max-width: 600px;
   line-height: 1.5;
+  padding: 0.5em;
 }
 
 /* body {
@@ -20,13 +21,16 @@ h2 {
 h1 {
   font-weight: bold;
   font-size: 2.5em;
-  margin-top: 2.5em;
 }
 
 h2 {
   color: #006eb6;
   font-size: 1em;
   letter-spacing: 0.25em;
+}
+
+header {
+  margin: 3em;
 }
 
 p,
@@ -37,12 +41,9 @@ li {
   margin: 1em;
 }
 
-/* ol {
-  font-style: italic;
-} */
-
 footer {
   justify-self: center;
+  margin: 2.5em;
 }
 
 img {
