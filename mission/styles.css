@@ -63,3 +63,17 @@ footer {
 img {
   width: 9em;
 }
+
+.dark {
+  background-color: #333;
+  color: white;
+  /* border-color: burlywood; */
+}
+.dark h2 {
+  /* color: #14a2ff; */
+  /* color: #a0d4ed; */
+  color: #4f9acf;
+}
+.dark p:first-of-type {
+  border-color: #555;
+}
