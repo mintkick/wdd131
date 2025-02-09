@@ -1,0 +1,90 @@
+/*
+Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --primary-color: #abc4ab;
+  /* dark green: #727D71 */
+  --secondary-color: #6d4c3d;
+  --accent-color: #a39171;
+  --text-dark: #23231a;
+  --text-light: #dcc9b6;
+  --primary-font: Lora, optima, serif;
+  --secondary-font: Arial, Helvetica, serif;
+  /* --secondary-font: Palatino, Optima, san-serif; */
+}
+
+* {
+  font-family: var(--primary-font);
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  /* text-align: center; */
+}
+
+a:link,
+a:visited {
+  /* color: var(--accent-color); */
+  color: var(--text-light);
+}
+
+p {
+  margin: 0.5em;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 0.5em;
+  /* padding: 1em; */
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 110px 120px 120px;
+  justify-items: end; /* stuff within items within grid container */
+  justify-content: end; /* items within grid container */
+}
+
+main {
+  margin: 0;
+  background-color: var(--primary-color);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+article {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  .details {
+  }
+}
+
+footer {
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  display: flex;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+}
+h1 {
+  font-weight: normal;
+}
+h3 {
+  margin: 0;
+  padding: 1em;
+}
