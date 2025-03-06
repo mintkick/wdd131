@@ -24,6 +24,17 @@ Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
   font-family: var(--primary-font);
 }
 
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  background-color: darkred;
+}
+.skiptocontent a:focus {
+  position: absolute;
+  top: 0px;
+  color: blanchedalmond;
+}
+
 body {
   margin: 0;
   font-family: var(--primary-font);
@@ -44,29 +55,43 @@ p {
 header {
   background-color: var(--primary-color);
   color: var(--text-light);
-  padding: 0.5em;
-  /* padding: 1em; */
+  padding: 0.5em; /* maybe remove this */
+  h1 {
+    padding: 20px;
+    justify-self: center;
+  }
+  nav {
+    margin: 0 auto;
+  }
 }
 
 .main-nav {
+  /* the <ul> */
   display: grid;
   grid-template-columns: 110px 120px 120px;
   justify-items: end; /* stuff within items within grid container */
   justify-content: end; /* items within grid container */
+  list-style: none;
+  font-size: larger;
+  /* li {
+    max-width: 1em;
+  } */
 }
 
 main {
   margin: 0;
   background-color: var(--primary-color);
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
+  /* this grid places articles to left and filters to right */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 article {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  .details {
-  }
+  display: grid;
+  /* this grid places article details to left and content to right */
+  grid-template-columns: 1fr 1fr;
+  /* .details {
+  } */
 }
 
 footer {
