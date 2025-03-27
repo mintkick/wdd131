@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A recipe book with ratings and filter and search tools."
+    />
+    <meta name="author" content="Adam Whittaker" />
+    <!-- favicon link missing -->
+    <link rel="stylesheet" href="recipes.css" />
+    <meta property="og:title" content="Page Title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Page Description" />
+    <meta property="og:image" content="URL to an image" />
+    <meta property="og:url" content="URL of the page" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="site-logo"
+        src="images/recipe-book.png"
+        alt="Recipe Book logo"
+      />
+      <h1>RecipeBook</h1>
+    </header>
+    <main>
+      <form action="#" class="search-row">
+        <input type="search" placeholder="Find a recipe" />
+        <button type="button">
+          <img src="images/search.svg" alt="search" />
+        </button>
+      </form>
+      <hr />
+      <article class="recipe">
+        <!-- <div class="img-box"> -->
+        <img
+          src="images/apple-crisp.jpg"
+          alt="apple crisp with ice cream in a bowl"
+        />
+        <!-- </div> -->
+        <div class="tag-row">
+          <span class="tag">dessert</span>
+          <span class="tag">dessert</span>
+          <span class="tag">dessert</span>
+        </div>
+        <h2>Apple Crisp</h2>
+        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+      </article>
+    </main>
+    <footer>
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#">
+          <img src="images/instagram_icon.svg" alt="instagram icon"
+        /></a>
+        <a href="#">
+          <img src="images/youtube_icon.svg" alt="youtube icon" />
+        </a>
+        <a href="#">
+          <img src="images/pinterest_icon.svg" alt="pinterest icon"
+        /></a>
+      </div>
+      <a
+        class="attribution"
+        href="https://www.flaticon.com/free-icons/recipe"
+        title="recipe icons"
+        >Recipe icons created by Freepik - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>

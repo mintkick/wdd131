@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+:root {
+  --primary-color: #1b98e0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Amatic SC";
+}
+.attribution {
+  font-size: 0.6em;
+  font-family: var(--primary-font);
+}
+
+/* *{border: 1px solid red;}*/
+
+/* Notice that on mobile the recipe description is not shown. When we make it responsive on the next step make sure to show the description on wide screens. */
+
+header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.site-logo {
+  /* height: 80px; */
+  height: 3.75rem;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+body {
+  font-family: var(--secondary-font);
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.search-row {
+  display: flex;
+  height: 2em;
+  img {
+    height: 16px;
+  }
+  input {
+    width: 100%;
+  }
+}
+
+.recipe {
+  border: solid #333;
+  border-radius: 7px;
+  padding: 1em;
+  padding-bottom: 2.5em;
+
+  .tag {
+    font-family: var(--primary-font);
+    border: solid #333;
+    border-bottom-right-radius: 8px;
+    padding: 0.15em 0.4em;
+    /* margin: 10px 0; */
+  }
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 0;
+  }
+  .rating {
+    /* display: flex; */
+    font-size: 100%;
+  }
+  .icon-star {
+    font-size: 100%;
+  }
+  .icon-star-empty {
+    font-size: 100%;
+    /* font-size: 1em; */
+  }
+}
+
+footer {
+  /* justify-items: center; */ /* BEING A PROBLEM */
+  margin-top: 3em;
+  text-align: center;
+  /* font-size: 0.6em; */
+  padding: 0 1rem;
+  .social {
+    padding-bottom: 0.25rem;
+  }
+  img {
+    max-width: 50px;
+  }
+}
+
+img {
+  max-width: 100%;
+  /* display: block; */
+  /* height: auto !important; */
+}
+/* .img-box {
+  max-width: 100%;
+}
+a {
+  max-width: 100%;
+} */
