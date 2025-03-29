@@ -1,0 +1,64 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  /* height: 300px; */
+  /* width: 300px; */
+}
+
+#card-front {
+  background-color: lightgray;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 3px 3px 5px #777;
+  border-radius: 6px;
+
+  #total {
+    display: flex;
+  }
+
+  #number {
+    display: flex;
+  }
+
+  #holder {
+    display: flex;
+  }
+
+  #expiration {
+    display: flex;
+  }
+}
+
+#card-back {
+  background-color: lightgray;
+  grid-column: 2/4;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 6px;
+  padding: 16px 0;
+
+  #bar {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #777;
+    height: 30px;
+  }
+
+  #cvc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+  }
+}
+
+button {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}

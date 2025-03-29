@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <main>
+      <div id="card-front">
+        <div id="total">
+          <p>TOTAL:</p>
+          <p>$199</p>
+        </div>
+        <form id="creditCard" action="">
+          <div id="number">
+            <label for="number">CREDIT CARD NUMBER</label>
+            <input
+              type="text"
+              name="number"
+              id="number"
+              placeholder="1234 5678 9101 1020"
+              required
+            />
+          </div>
+          <div id="holder">
+            <label for="holder">CARD HOLDER</label>
+            <input
+              type="text"
+              name="holder"
+              id="holder"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div id="expiration">
+            <label for="expiration">EXPIRATION</label>
+            <input
+              type="text"
+              name="inputMonth"
+              id="inputMonth"
+              placeholder="MM"
+              required
+            />
+            <input
+              type="text"
+              name="inputYear"
+              id="inputYear"
+              placeholder="YY"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div id="card-back">
+        <div id="bar"></div>
+        <!-- does nothing but fill grid space -->
+        <div></div>
+        <form id="creditCard" action="">
+          <div id="cvc">
+            <label for="cvc">CVC/CVV</label>
+            <input
+              type="text"
+              name="cvc"
+              id="cvc/"
+              placeholder="xxx"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <button type="submit">Submit</button>
+    </main>
+  </body>
+</html>
