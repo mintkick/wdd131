@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MintKick | Home</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <!-- "real" header -->
+      <header>
+        <a href="index.html" id="logo_link">
+          <div class="logo-container">
+            <img
+              class="logo"
+              src="images/mintkick-logo-palegreen.png"
+              alt="logo"
+            />
+          </div>
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="music.html">Music</a>
+          <a href="about-me.html">About Me</a>
+        </nav>
+      </header>
+
+      <main class="home-flex">
+        <!-- sticky header -->
+        <section id="header">
+          <a href="index.html" id="logo_link">
+            <div class="logo-container">
+              <img
+                class="logo"
+                src="images/mintkick-logo-palegreen.png"
+                alt="logo"
+              />
+            </div>
+          </a>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="about-me.html">About Me</a>
+          </nav>
+        </section>
+
+        <div class="hero">
+          <div class="hero-box">
+            <img
+              onload="typeWriter()"
+              class="hero-img"
+              src="images/hero1.jpg"
+              alt="hero image"
+            />
+          </div>
+          <!-- <h1 class="home-title">MintKick</h1> -->
+          <div class="home-title">
+            <h1>MintKick Official</h1>
+          </div>
+          <!-- <p>MintKick</p><p>Official</p> -->
+          <!-- <section> -->
+          <!-- <h1 class="home-title">MintKick Official</h1> -->
+          <!-- </section> -->
+        </div>
+
+        <div class="bio-div">
+          <img
+            class="profile"
+            src="images/profile.jpg"
+            alt="a picture of me!"
+          />
+          <div class="brief-bio">
+            <p>
+              Hi! This is MintKick! This website is a platform to present my
+              creative content and to allow me to share a bit of my personal
+              commentary on my artistic journey as well.
+            </p>
+            <p>
+              In the music section, I proudly present some of my favorite and
+              best songs that I've written for imaginary video games.
+            </p>
+            <p>
+              In the About Me page, you can read about where I started and how
+              I've gotten to the place I am now as a creator.
+            </p>
+            <p>
+              I make videos too! In the future, I may include a video section
+              where there will be links to some of my own videos on YouTube.
+            </p>
+          </div>
+        </div>
+
+        <div class="msg">
+          <h2>Explore!</h2>
+          <p>
+            Use the navigation bars at the top or bottom of each page to check
+            out whatever topics interest you!
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>MintKick | 2024 - Adam Whittaker</p>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="music.html">Music</a></p>
+        <p><a href="about-me.html">About Me</a></p>
+        <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+      </footer>
+
+      <!-- <script>
+        var i = 0;
+        var txt = "MintKick Official"; /* The text to print */
+        var speed = 50; /* The time between each character in milliseconds */
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("home-title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+      </script> -->
+    </div>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the header
+      var header = document.getElementById("header");
+
+      // Get the offset position of the header
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("sticky");
+          // make the header div element visible
+          header.style.display = "grid";
+        } else {
+          header.classList.remove("sticky");
+          // vvv doesn't work vvv
+          // // make the header div element invisible
+          // header.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

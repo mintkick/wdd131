@@ -1,0 +1,428 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Tiny5&family=Pixelify+Sans:wght@400..700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); */
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: palegreen; /* #3dcc8f; */
+  /* #396e94; */
+  --secondary-color: mediumseagreen;
+  /* #3dcc8f; */
+  /* #e7c24f; */
+  --accent1-color: black; /* check out the mediums, pales, aquamarines, sea, and spring greens*/
+  --accent2-color: blanchedalmond;
+  /* mintcream; */
+  /* #a42212; */
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playwrite AU SA";
+  --paragraph-font: Nunito, Courier, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --secondary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: var(
+    --primary-color
+  ); /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --accent1-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: var(
+    --accent2-color
+  ); /* paragraph text on a colored background */
+  --paragraph-background-color: var(
+    --secondary-color
+  ); /* background color for any text */
+  --nav-link-color: mintcream;
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: black;
+}
+
+/**** Home ****/
+
+.logo,
+.icon {
+  width: 80px;
+  padding-top: 5px;
+}
+#logo_link {
+  padding-top: 5px;
+  margin-left: 250px;
+  justify-self: center;
+  align-self: center;
+}
+
+/* h1 {
+  margin: 0;
+  font-family: "Playwrite AU SA", Courier, sans-serif;
+  color: var(--accent1-color);
+}
+h4 {
+  color: var(--accent1-color);
+} */
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+body {
+  font-family: Nunito, Mukta, sans-serif;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  background-color: #111d;
+  color: var(--accent2-color);
+}
+
+header {
+  /* overflow: hidden; */
+  /* background-color: var(--secondary-color); */
+  box-shadow: 0 5px 50px var(--secondary-color);
+  font-family: "Playwrite AU SA", Courier, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-template-columns: auto 150px auto; */
+}
+#header {
+  background-color: #303030;
+  font-family: "Playwrite AU SA", Courier, sans-serif;
+  display: none;
+  grid-template-columns: auto auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 260px;
+}
+nav a {
+  font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
+  text-align: center;
+  padding: 25px 50px 25px 50px;
+  /* color: var(--nav-link-color); */
+  color: grey;
+  /* color: goldenrod; */
+  /* background-color: var(--secondary-color); doesn't change it */
+  text-decoration: none;
+  text-shadow: 0 0 7px black;
+}
+nav a:hover {
+  color: var(--primary-color);
+  background-color: black;
+  text-shadow: 0 0 7px var(--primary-color);
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position (0) */
+.sticky {
+  /* display: grid; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0)) */
+/* .sticky,
+#content {
+  padding-top: 60px;
+} */
+
+.home-flex {
+  text-align: center;
+  /* display: grid; */
+  /* grid-template-columns: repeat(8, 1fr); */
+  /* grid-template-columns: 125px, 2fr, 4fr, 125px; */
+  /* grid-template-rows: 25px 1fr 1fr 1fr 1fr; */
+  /* grid-row: 100px, 1fr, 1fr, 100px; */
+}
+/* main section img {
+  box-sizing: border-box;
+}
+section {
+  text-align: center;
+} */
+
+.hero {
+  /* margin: 25px 275px 25px 275px; */
+  margin: 5% 30.2%;
+  /* grid-column: 1/9; */
+  /* grid-column: 1/5; */
+  /* grid-row: 2/3; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+/* the .hero-box exclusicely holds the img */
+.hero-box {
+  /* margin: 25px auto 25px auto; */
+  /* margin: 25px 275px 25px 275px; */
+  /* grid-column: 3/9;
+  grid-row: 2/3; */
+
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  /* z-index: -1; */
+
+  /* margin-left: 5em;
+  margin-right: 5em; */
+}
+.hero-img {
+  width: 100%;
+  /* height: 100px; */
+  /* grid-column: 1/4;
+  grid-row: 1/4; */
+}
+.home-title {
+  align-content: center;
+  /* height: 100%; */
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  /* grid-column: 2/3; */
+  /* grid-row: 2/3; */
+  /* margin-left: 5em;
+  margin-right: 5em; */
+  /* margin: auto, 7%, auto, 7%; */
+}
+.home-title h1 {
+  padding: 1% 5% 3% 5%;
+
+  /* looks like a neon sign */
+  /* font-family: "Playwrite AU SA", Courier, sans-serif; */
+  /* font-weight: 700; */
+
+  /* looks like a screen */
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+
+  font-size: 2em;
+  background-color: black;
+  color: var(--primary-color);
+  text-shadow: 0 0 12px var(--primary-color);
+}
+
+.bio-div {
+  display: flex;
+  padding: 0 5%;
+}
+.profile {
+  width: 40%;
+  height: 100%;
+  /* max-width: fit-content; */
+  /* grid-column: 2/3; */
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  box-shadow: 3px 2px 5px black;
+  /* z-index: 1; */
+}
+.brief-bio {
+  /* grid-column: 3/4; */
+  text-align: justify;
+  /* margin-left: 7.2%;
+  margin-right: 10%; */
+  padding: 2em;
+  background-color: #3cb37188;
+}
+
+.msg {
+  /* grid-column: 2/4; */
+  margin-top: 4em;
+  margin-bottom: -4em;
+  padding: 3%;
+  background-color: var(--accent1-color);
+  box-shadow: 0 0 3px black;
+}
+.msg h2 {
+  font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
+  color: var(--primary-color);
+}
+.msg p {
+  padding: 0 26%;
+}
+
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+  background-color: black;
+  color: var(--accent2-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  font-size: 1.2em;
+  color: mintcream;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Music */
+
+.music-page {
+  text-align: center;
+}
+
+.subpage-title-banner,
+.status-title {
+  /* background-color: var(--secondary-color); */
+  margin-top: 6%;
+  padding: 2% 12%;
+  background-color: var(--accent1-color);
+  /* box-shadow: 0 0 3px black; */
+}
+/* .subpage-title-banner img {
+  width: 10em;
+} */
+.subpage-title-banner h1 {
+  color: var(--primary-color);
+  /* font-style: italic; */
+  font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
+}
+/* .subpage-title-banner p { */
+/* color: mintcream; */
+/* color: var(--accent2-color); */
+/* margin: 0; */
+/* } */
+
+.song-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto 3.5em;
+}
+.song-entry {
+  /* justify-self: start; */
+  margin: 1.7em;
+  background-color: #3cb37188;
+  /* background-color: black; */
+  box-shadow: 2px 2px 5px black;
+}
+/* .song-entry:nth-of-type(odd) {
+  margin-left: 5em;
+}
+.song-entry:nth-of-type(even) {
+  margin-right: 5em;
+} */
+.song-entry p {
+  text-align: justify;
+  font-size: smaller;
+  padding: 1.2em;
+  color: mintcream;
+}
+.song-entry a {
+  text-decoration: none;
+  /* color: paleturquoise; */
+  color: var(--accent2-color);
+}
+.song-entry:hover {
+  background-color: var(--secondary-color);
+  /* box-shadow: 0 0 7px var(--primary-color); */
+  box-shadow: 0 0 8px var(--secondary-color);
+}
+.song-entry:hover h3 {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.status {
+  display: flex;
+  text-align: justify;
+  background-color: #3cb37188;
+  padding: 0 5%;
+  box-shadow: 2px 2px 5px black;
+}
+.status-title {
+  color: mintcream;
+  font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
+  /* box-shadow: 0 -10px 70/15px black; */
+  /* box-shadow: 0 -10px 25px var(--secondary-color); */
+}
+.screenshot {
+  width: 45%;
+  height: 100%;
+  margin-left: 5%;
+  box-shadow: 1px 1px 3px #0008;
+}
+
+/* About Me */
+
+.about-me-page {
+  text-align: center;
+}
+.about-me-page .bio-div img {
+  width: 33%;
+  height: 100%;
+  align-self: flex-end;
+  box-shadow: 3px 2px 5px black;
+  z-index: -1;
+}
+
+.subject-banner {
+  /* background-color: var(--secondary-color); */
+  margin-top: 6%;
+  padding: 2% 12%;
+  /* background-color: var(--accent1-color); */
+  /* box-shadow: 0 0 3px black; */
+  color: mintcream;
+  font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
+  box-shadow: 0 0 20px black;
+  /* box-shadow: 0 -10px 25px var(--secondary-color); */
+}
+.chapter-content {
+  width: 75%;
+  /* display: block; */
+  margin: 0 auto;
+  text-align: justify;
+
+  padding: 2em;
+  line-height: 1.5em;
+  background-color: #3cb37188;
+  box-shadow: 3px 3px 10px #111d;
+}
+.chapter-content h4 {
+  /* font-family:  */
+  color: mintcream;
+  /* text-align: center; */
+  /* margin-left: 5em; */
+  /* margin-left: -10%; */
+  /* background-color: black; */
+}
+/* .chapter-content p { padding: 2%; box-shadow: 0 0 4px black;} */
+/* .chapter-content img {} */
+
+/* Media Query -- Do not add any CSS below! */
+
+/* @media screen and (max-width: 900px) {
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  footer {
+    margin-top: 25px;
+  }
+} */
+
+/* ^^^ Media Query -- Do not add any CSS here or below! */

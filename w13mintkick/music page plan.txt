@@ -1,0 +1,11 @@
+normal page layout -- whole page: no display -- default
+grid for music
+normal again
+flex
+
+grid gap
+gaps between all cells in the grid
+
+
+
+could do one flex row of two song entry divs stacked vertically

@@ -1,0 +1,15 @@
+Ideas:::
+
+Drop-down menu
+
+Sorting/arranging (array of) songs using filters
+
+Album of photos that can be toggled through
+
+Toggle showing 2 songs in grid vs auto
+
+Little dancing thing [pulling tempo atttribute from song]
+
+Playhead?
+
+?You click on a song. The songs are cards that slide onto screen with a little tilt
