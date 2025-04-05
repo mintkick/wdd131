@@ -404,7 +404,8 @@ footer {
 /* .chapter-content p { padding: 2%; box-shadow: 0 0 4px black;} */
 /* .chapter-content img {} */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (min-width: 960px) { */
+@media screen and (min-width: 600px) {
   .sticky {
     display: none;
   }
