@@ -1,6 +1,6 @@
 import songs from "./songs.mjs";
 
-console.log(songs);
+// console.log(songs);
 
 // target a place to render all songs in list
 function renderSongs(songs) {
