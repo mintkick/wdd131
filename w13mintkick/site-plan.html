@@ -42,18 +42,25 @@
       <p>
         Rather than being hard-coded in HTML, the song entries on my Music page
         will be rendered from an array kept in a .mjs file. With this, the page
-        will dynamically allocate space for each song I add.
+        can dynamically allocate space for each song I add. This will be
+        accomplished using array functions like .forEach().
       </p>
-      <p>This will be accomplished using array functions like .forEach().</p>
       <p>
         "It should include DOM interaction: select an element, modify it, and
-        listen for and react to events" -- Descriptions on songs are hidden
-        until clicked on! -- If I must use an array method, could filter songs
-        (e.g., show only X series).
+        listen for and react to events" -- Ideas: Descriptions on songs are
+        hidden until clicked on! -- If I must use an array method, could filter
+        songs (e.g., show only X series).
       </p>
       <p>
-        Doesn't need to expand description! DOM is modified on load by HTML
-        injection. Filtering is also not needed.
+        Correction: Doesn't need to expand description! DOM is modified on load
+        by HTML injection. Filtering is also not needed.
+      </p>
+      <p>
+        Conditional Branching: A song entry with the "wip" status will use a
+        separate HTML template that includes "[WIP]" in the title. (In the
+        future, I may consider adding dates of when the a song was made. A
+        "NEW!!" tag would be added only for songs made in the past few weeks,
+        calculated by getting the current time.)
       </p>
 
       <hr />

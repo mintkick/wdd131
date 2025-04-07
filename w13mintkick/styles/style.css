@@ -309,6 +309,9 @@ footer {
   background-color: #3cb37188;
   /* background-color: black; */
   box-shadow: 2px 2px 5px black;
+  h3 {
+    font-style: italic;
+  }
 
   /* .song-entry:nth-of-type(odd) {
   margin-left: 5em;
@@ -336,6 +339,10 @@ footer {
     text-decoration: underline;
     color: var(--primary-color);
   }
+}
+.wip {
+  background-color: #303030;
+  /* color: paleturquoise; */
 }
 
 .status {
@@ -395,6 +402,7 @@ footer {
   h4 {
     /* font-family:  */
     color: mintcream;
+    font-style: italic;
     /* text-align: center; */
     /* margin-left: 5em; */
     /* margin-left: -10%; */
@@ -405,9 +413,11 @@ footer {
 /* .chapter-content img {} */
 
 /* @media screen and (min-width: 960px) { */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 820px) {
   .sticky {
     display: none;
+    /* Doesn't work, so had to delete its HTML */
   }
 
   .song-grid {
@@ -442,7 +452,7 @@ footer {
   nav {
     display: flex;
     justify-content: space-around;
-    /* margin-right: 260px; */
+    margin-right: 0;
   }
   nav a {
     padding: 25px 5px;
@@ -482,18 +492,24 @@ footer {
     p {
       font-size: 1.2em;
       color: mintcream;
-      a:hover {
-        text-decoration: underline;
-      }
     }
     a {
+      font-size: medium;
       color: var(--secondary-color);
       text-decoration: none;
       margin: 1rem;
     }
     a:hover {
+      text-decoration: underline;
       color: var(--secondary-color);
     }
+  }
+
+  .hero-box {
+    display: none;
+  }
+  .bio-div {
+    flex-direction: column;
   }
 }
 
