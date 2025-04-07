@@ -262,12 +262,12 @@ footer {
     }
   }
   a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
   }
-  a:hover {
+  /* a:hover {
     color: var(--secondary-color);
-  }
+  } */
 }
 
 /* Music */
@@ -495,14 +495,11 @@ footer {
     }
     a {
       font-size: medium;
-      color: var(--secondary-color);
-      text-decoration: none;
       margin: 1rem;
     }
-    a:hover {
-      text-decoration: underline;
+    /* a:hover {
       color: var(--secondary-color);
-    }
+    } */
   }
 
   .hero-box {
