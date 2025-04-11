@@ -39,6 +39,7 @@ Fonts are separated by a |
     --secondary-color
   ); /* background color for any text */
   --nav-link-color: mintcream;
+  /* for the unlit-neon-sign look: grey */
   --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: var(--primary-color);
   --nav-hover-background-color: black;
@@ -104,17 +105,24 @@ nav a {
   font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
   text-align: center;
   padding: 25px 50px 25px 50px;
-  /* color: var(--nav-link-color); */
-  color: grey;
-  /* color: goldenrod; */
-  /* background-color: var(--secondary-color); doesn't change it */
+  color: var(--nav-link-color);
+  /* color: #e6b742; goldenrod, but a smidge lighter for accessability */
+  /* color: var(--accent2-color); */
   text-decoration: none;
   text-shadow: 0 0 7px black;
 }
 nav a:hover {
   color: var(--primary-color);
-  background-color: black;
+  background-color: #0002;
+  /* black helped the sign light pop out; trans-black gives a focused look */
   text-shadow: 0 0 7px var(--primary-color);
+  box-shadow: 0 0 7px #000;
+  /* the contrasting black makes it look like a 3D button */
+  /* (giving transperancy will return the focused look) */
+}
+nav a:active {
+  box-shadow: none;
+  /* pushing the button into the bar */
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position (0) */
@@ -309,8 +317,19 @@ footer {
   background-color: #3cb37188;
   /* background-color: black; */
   box-shadow: 2px 2px 5px black;
-  h3 {
+  .song-title {
+    /* previously just an h3, but lighthouse didn't like that for tab-focus accessibility */
+    /* only style applied to h3 version was italic */
+    font-size: larger;
     font-style: italic;
+    font-weight: bold;
+    justify-self: center;
+    margin: 0;
+    padding-bottom: 0;
+    color: var(--accent2-color);
+    /* applying all this makes the title slightly larger and slightly lower
+    (which I actually like better!) */
+    /* it DOES however change the grey WIP title band to go from credit card to floppy disk shapes */
   }
 
   /* .song-entry:nth-of-type(odd) {
@@ -335,7 +354,7 @@ footer {
   background-color: var(--secondary-color);
   /* box-shadow: 0 0 7px var(--primary-color); */
   box-shadow: 0 0 8px var(--secondary-color);
-  h3 {
+  .song-title {
     text-decoration: underline;
     color: var(--primary-color);
   }
@@ -412,7 +431,6 @@ footer {
 /* .chapter-content p { padding: 2%; box-shadow: 0 0 4px black;} */
 /* .chapter-content img {} */
 
-/* @media screen and (min-width: 960px) { */
 /* @media screen and (max-width: 768px) { */
 @media screen and (max-width: 820px) {
   .sticky {

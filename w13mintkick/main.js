@@ -6,20 +6,20 @@ import songs from "./songs.mjs";
 function renderSongs(songs) {
   let target = document.querySelector(".song-grid");
   let html = "";
-  // let length = songs.length - 1;
   songs.forEach((entry) => {
     if (entry.status == "done") html += songTemplate(entry);
     else html += songTemplateWIP(entry);
-    // i++;
   });
   target.innerHTML = html;
 }
+// let length = songs.length - 1;
+// i ==
 
 function songTemplate(entry) {
   return `<article class="song-entry">
               <a href="${entry.link}"
                 target="_blank">
-                <h3>${entry.title}</h3>
+                <p class="song-title">${entry.title}</p>
                 <p>
                   ${entry.description}
                 </p></a>
@@ -31,7 +31,7 @@ function songTemplateWIP(entry) {
   return `<article class="song-entry">
               <a href="${entry.link}"
                 target="_blank">
-                <h3 class="wip">${entry.title} [WIP]</h3>
+                <p class="wip song-title">${entry.title} [WIP]</p>
                 <p>
                   ${entry.description}
                 </p></a>
