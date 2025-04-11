@@ -13,7 +13,7 @@ function renderSongs(songs) {
   target.innerHTML = html;
 }
 // let length = songs.length - 1;
-// i ==
+// i++;
 
 function songTemplate(entry) {
   return `<article class="song-entry">
