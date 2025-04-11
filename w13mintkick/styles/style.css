@@ -239,7 +239,7 @@ footer {
   background-color: #3cb37188;
   /* background-color: black; */
   box-shadow: 2px 2px 5px black;
-  .song-title {
+  p.song-title {
     /* previously just an h3, but lighthouse didn't like that for tab-focus accessibility */
     /* only style applied to h3 version was italic */
     font-size: larger;
@@ -269,7 +269,7 @@ footer {
   background-color: var(--secondary-color);
   /* box-shadow: 0 0 7px var(--primary-color); */
   box-shadow: 0 0 8px var(--secondary-color);
-  .song-title {
+  p.song-title {
     text-decoration: underline;
     color: var(--primary-color);
   }
